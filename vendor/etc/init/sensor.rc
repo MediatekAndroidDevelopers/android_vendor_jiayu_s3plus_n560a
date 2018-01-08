@@ -8,8 +8,9 @@ service msensord /vendor/bin/msensord
     class main
     oneshot
 
-service mxg2320d /vendor/bin/mxg2320d
+service qmc6983d /vendor/bin/qmc6983d
     disabled
     user system
     group system
     class main
+    oneshot
