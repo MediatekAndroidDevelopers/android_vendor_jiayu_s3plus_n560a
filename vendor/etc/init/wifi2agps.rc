@@ -1,4 +1,0 @@
-service wifi2agps /vendor/bin/wifi2agps
-    class main
-    user wifi
-    group gps inet
