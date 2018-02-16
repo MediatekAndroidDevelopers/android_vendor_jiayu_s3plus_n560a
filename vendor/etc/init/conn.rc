@@ -1,10 +1,10 @@
 service wmt_loader /vendor/bin/wmt_loader
     class core
-    user root
-    group root
+    user system
+    group system
     oneshot
 
 service wmt_launcher /vendor/bin/wmt_launcher -p /vendor/firmware/
+    class core
     user system
     group system
-    class core

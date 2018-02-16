@@ -6,11 +6,12 @@ on property:vold.decrypt=trigger_restart_framework
 
 service msensord /vendor/bin/msensord
     class main
+    user system
+    group system
     oneshot
 
 service qmc6983d /vendor/bin/qmc6983d
-    disabled
+    class main
     user system
     group system
-    class main
-    oneshot
+    disabled

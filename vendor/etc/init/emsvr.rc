@@ -1,4 +1,4 @@
 service emsvr /vendor/bin/em_svr
     class main
-    user system
-    group system camera
+    user nvram
+    group nvram

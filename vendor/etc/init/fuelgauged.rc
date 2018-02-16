@@ -1,4 +1,4 @@
 service fuelgauged /vendor/bin/fuelgauged
     class main
-    user system
+    user root
     group system

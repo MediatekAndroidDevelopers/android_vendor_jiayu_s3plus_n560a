@@ -1,7 +1,7 @@
 service muxreport-daemon /vendor/bin/muxreport
     class core
     user radio
-    group radio cache inet misc
+    group radio
     disabled
     oneshot
 
