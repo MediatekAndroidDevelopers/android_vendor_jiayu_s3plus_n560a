@@ -1,17 +1,5 @@
-on property:vold.decrypt=trigger_restart_min_framework
-    start msensord
-
-on property:vold.decrypt=trigger_restart_framework
-    start msensord
-
-service msensord /vendor/bin/msensord
-    class main
-    user system
-    group system
-    oneshot
-
 service qmc6983d /vendor/bin/qmc6983d
     class main
     user system
     group system
-    disabled
+    oneshot
